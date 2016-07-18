@@ -1,14 +1,14 @@
 {
-  "name": "universal-redux",
+  "name": "fmp-universal-redux",
   "description": "A universal redux renderer (ES6, Webpack, Express)",
-  "author": "Buck DeFore <bdefore@gmail.com> (http://github.com/bdefore)",
+  "author": "Tech Findmypast",
   "license": "MIT",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bdefore/universal-redux.git"
+    "url": "git+https://github.com/findmypast/universal-redux.git"
   },
-  "homepage": "https://github.com/bdefore/universal-redux",
+  "homepage": "https://github.com/findmypast/universal-redux",
   "keywords": [
     "react",
     "isomorphic",
@@ -120,6 +120,6 @@
     "universal-redux-build": "./bin/build.js"
   },
   "bugs": {
-    "url": "https://github.com/bdefore/universal-redux/issues"
+    "url": "https://github.com/findmypast/universal-redux/issues"
   }
 }
