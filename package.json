@@ -3,7 +3,7 @@
   "description": "A universal redux renderer (ES6, Webpack, Express)",
   "author": "Tech Findmypast",
   "license": "MIT",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/findmypast/universal-redux.git"
