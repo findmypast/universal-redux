@@ -1,5 +1,5 @@
 {
-  "name": "fmp-universal-redux",
+  "name": "universal-redux-render",
   "description": "A universal redux renderer (ES6, Webpack, Express)",
   "author": "Tech Findmypast",
   "license": "MIT",
