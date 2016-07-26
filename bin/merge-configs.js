@@ -49,7 +49,7 @@ module.exports = (userConfig) => {
   const combinedToolsConfig = lodash.merge(baseToolsConfig, userToolsConfig);
 
   // bury it here rather than pollute the project directory
-  combinedToolsConfig.webpack_assets_file_path = 'node_modules/universal-redux/webpack-assets.json';
+  combinedToolsConfig.webpack_assets_file_path = 'node_modules/universal-redux-render/webpack-assets.json';
 
   // add tools settings to combined weback config
   const toolsPlugin = new WebpackIsomorphicToolsPlugin(combinedToolsConfig);
@@ -73,10 +73,10 @@ module.exports = (userConfig) => {
 
   // add routes, reducer and rootClientComponent aliases so that client has access to them
   combinedWebpackConfig.resolve.alias = combinedWebpackConfig.resolve.alias || {};
-  combinedWebpackConfig.resolve.alias['universal-redux/routes'] = universalReduxConfig.routes;
-  combinedWebpackConfig.resolve.alias['universal-redux/middleware'] = universalReduxConfig.redux.middleware || path.resolve(__dirname, '../lib/helpers/empty.js');
+  combinedWebpackConfig.resolve.alias['universal-redux-render/routes'] = universalReduxConfig.routes;
+  combinedWebpackConfig.resolve.alias['universal-redux-render/middleware'] = universalReduxConfig.redux.middleware || path.resolve(__dirname, '../lib/helpers/empty.js');
   const rootComponentPath = universalReduxConfig.rootClientComponent || universalReduxConfig.rootComponent || path.resolve(__dirname, '../lib/client/root.js');
-  combinedWebpackConfig.resolve.alias['universal-redux/rootClientComponent'] = rootComponentPath;
+  combinedWebpackConfig.resolve.alias['universal-redux-render/rootClientComponent'] = rootComponentPath;
 
   // add project level vendor libs
   if (universalReduxConfig.webpack.vendorLibraries && isProduction) {
